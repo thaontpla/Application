@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.testfinal.features.search.SearchByKeywordStory" skipped="0" tests="1" time="16.87" timestamp="2023-07-09 03:46:44"><testcase classname="com.testfinal.features.search.SearchByKeywordStory" name="Search results should show the search term in the title"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.testfinal.tasks.Search.performAs(Search.java:22)&#13;
+com.testfinal.features.search.SearchByKeywordStory.search_results_should_show_the_search_term_in_the_title(SearchByKeywordStory.java:45)&#13;
+</system-err></testcase></testsuite>
