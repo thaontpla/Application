@@ -9,7 +9,7 @@ import com.testfinal.ui.TechmasterPage;
 public class OpenTheApplication implements Task {
     TechmasterPage techmasterPage;
     @Override
-    @Step("Open the application")
+    @Step("Open the Techmaster page")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Open.browserOn().the(techmasterPage)
