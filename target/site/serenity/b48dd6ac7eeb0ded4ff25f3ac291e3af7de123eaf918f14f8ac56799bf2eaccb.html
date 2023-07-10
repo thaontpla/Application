@@ -182,9 +182,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="failing-color">
                                     Search results should show the search term in the title
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -257,6 +257,7 @@
                         Steps
                     </th>
 
+                        <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
                     <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
@@ -321,13 +322,13 @@
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-ERROR">
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1 error-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection1 failure-icon"
                                        style="margin-left: 20px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
@@ -352,12 +353,12 @@
                             <td colspan="5">
                                 <table id="stepSection1" class="step-table-nested" style="display:none;">
 
-                    <tr class="test-ERROR">
+                    <tr class="test-FAILURE">
 
                         <td width="70" class="step-icon">
                             <a name="1-0"></a>
                                 <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -435,6 +436,9 @@
                             </div>
                         </td>
 
+                            <td width="160" class="SKIPPED-text">
+
+                            </td>
                         <td width="130"><span class="top-level-step">SKIPPED</span></td>
                         <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
