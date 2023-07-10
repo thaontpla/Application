@@ -1,9 +1,9 @@
 
 @Narrative(
-        title = "Search for definitions",
-        text = {"In order to impress people",
-                "As a party goer",
-                "I want to be able to look up the meaning of unusual and impressive words"},
+        title = "Login for Techmaster page",
+        text = {"In the techmaster page",
+                "As a user",
+                "I want to be able to login into the page"},
         cardNumber = "#123"
 )
 package com.testfinal.features.search;

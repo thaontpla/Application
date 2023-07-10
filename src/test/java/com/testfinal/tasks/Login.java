@@ -9,20 +9,25 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class Login implements Task {
+    private UserAccount userAccount;
 
-    UserAccount userAccount;
-    public static Login inputAccount() {
-        return instrumented(Login.class);
+    public Login(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
 
+    public static Login inputAccount(UserAccount userAccount) {
+        return instrumented(Login.class, userAccount);
+    }
     @Override
+    @Step("User input the information of user name and password")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(TechmasterPage.USER_ICON),
+                IconUser.choose(),
                 Enter.theValue(userAccount.getName()).into(LoginUI.EMAIL),
                 Enter.theValue(userAccount.getPass()).into(LoginUI.PASS),
                 Click.on(LoginUI.DANG_NHAP)
