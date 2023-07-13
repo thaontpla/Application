@@ -27,4 +27,12 @@ public class UserAccount {
     public void setPass(String pass) {
         this.pass = pass;
     }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
+                '}';
+    }
 }
