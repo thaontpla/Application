@@ -1,10 +1,9 @@
 package com.testfinal.ui;
 
 import net.serenitybdd.screenplay.targets.Target;
-import org.openqa.selenium.By;
 
 public class LoginUI {
-    public static Target WARNING_MESSAGE = Target.the("warning message").locatedBy("//div[contains(text(),'định dạng email không hợp lệ')]");
+    public static Target MESSAGE = Target.the("warning message").locatedBy("//div[contains(@class,'toast-message')]");
     public static Target EMAIL = Target.the("input email").locatedBy("//div[@id='sign-in-div']/descendant::input[@placeholder='Email']");
     public static Target PASS = Target.the("input pass").locatedBy("//div[@id='sign-in-div']/descendant::input[@placeholder='Password']");
     public static Target DANG_NHAP = Target.the("button dang nhap").locatedBy("//div[@id='sign-in-div']/descendant::button");
@@ -14,5 +13,5 @@ public class LoginUI {
     public static Target GOOGLE = Target.the("google icon").locatedBy("//img[@alt='google_sign_in']");
     public static Target FACEBOOK = Target.the("facebook icon").locatedBy("//img[@alt='facebook_sign_in']");
     public static Target GIT = Target.the("git icon").locatedBy("//img[@alt='github_sign_in']");
-
+    public static Target ACCOUNT = Target.the("information account").locatedBy("//div[contains(@class,'user-info')]");
 }

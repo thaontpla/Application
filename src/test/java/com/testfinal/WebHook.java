@@ -44,10 +44,13 @@ public class WebHook {
             }
             for (int i = 1; i < lists.size(); i++) {
                 String[] parts = lists.get(i).split("\\s+");
-                accountList.add(new UserAccount(parts[0], parts[1]));
+                if (parts.length == 2) {
+                    accountList.add(new UserAccount(parts[0], parts[1]));
+                } else {
+                    accountList.add(new UserAccount(parts[0], parts[1], parts[2], parts[3], parts[4]));
+                }
+
             }
-//            System.out.println(accountList.get(0));
-//            System.out.println(accountList.get(0).getName());
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
