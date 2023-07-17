@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="com.testfinal.features.search.SearchByKeywordStory" skipped="0" tests="1" time="5.68" timestamp="2023-07-11 01:00:36"><testcase classname="com.testfinal.features.search.SearchByKeywordStory" name="Search results should show the search term in the title"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-com.testfinal.tasks.Login.performAs(Login.java:24)&#13;
-com.testfinal.features.search.SearchByKeywordStory.search_results_should_show_the_search_term_in_the_title(SearchByKeywordStory.java:37)&#13;
-</system-err></testcase></testsuite>

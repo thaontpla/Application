@@ -6,6 +6,6 @@
                 "I want to be able to login into the page"},
         cardNumber = "#123"
 )
-package com.testfinal.features.search;
+package com.testfinal.features.login;
 
 import net.thucydides.core.annotations.Narrative;
